@@ -1,0 +1,15 @@
+paths:
+  input: ./input
+  output: ./output
+  temp: ./temp
+  scripts: ./scripts
+
+file_stem: "ifn_pa" # Input file stem (name without extension)
+
+parameters:
+  encoding: latin-1
+  delimiter: ','
+  dap_outlier_factor: 4.0  # Factor for DAP outlier detection (multiples of std dev)
+  height_outlier_factor: 4.0  # Factor for height outlier detection (multiples of std dev)
+  dap_outlier_abs: 300  # Absolute DAP outlier threshold (cm). Change according to forest type
+  height_outlier_abs: 120  # Absolute height outlier threshold (m). Change according to forest type
